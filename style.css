@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    
+}
+
+header{
+    position: fixed;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+header .logo{
+    font-family: kenia;
+    font-size: 38px;
+    color:rgb(255, 255, 255);
+    
+}
+header .logo span{
+    font-size: 40px;
+    font-weight: 800px;
+    color:rgb(0, 249, 233);
+    text-decoration: underline;
+    
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    justify-content: space-between;
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all ease 1s;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+.navbar a:hover{
+    color: aqua;
+    border: 2px solid aqua;
+}
+.navbar a.active{
+    color: aqua;
+    border: 2px solid aqua;
+}
+.follow{
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.follow span{
+    transition: all 0.6s ease-in-out;
+}
+.follow span:hover{
+    
+    color: aqua;
+}
+.follow img{
+    background-color: #fff;
+    padding: 2px;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 12px;
+    vertical-align: middle;
+    transition: all ease .50s;
+}
+.follow img:hover{
+    transform: translateY(-5px);
+    background-color: aquamarine;
+}
+.menu-icon{
+    background-color: #fff;
+    cursor: pointer;
+    transition: all ease .50s;
+}
+.menu-icon:hover{
+    transform: translateX(-10px);
+    background-color: aqua;
+}
+section{
+    padding: 70px 17% 60px;
+    
+}
+
+.home{
+    background-image: linear-gradient(to left,rgba(15, 14, 14, 0.6),rgba(0,0,0,0.3)),url(image/scenery.jpg);
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+.home h2{
+    position: absolute;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 90px;
+    padding: 25% 3%;
+}
+.home .text{
+    align-items: center;
+    padding: 30% 5%;
+    font-size: 60px;
+}
+
+.text h1{
+    position: absolute;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-image: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -1600px 0;
+    animation: backcolor 5s forwards;
+
+}
+
+
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+.home .text .btn{
+    padding: 30% 5px;
+    z-index: 1;
+}
+.home .text .btn a{
+    color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.home .btn a:hover{
+    color: aqua;
+    
+}
+
+.feature-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.row-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.7s;
+}
+.row-img img:hover{
+    transform: scale(1.2);
+}
+.feature-content h4{
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+.feature-content h4:hover{
+    color: aqua;
+}
+.holiday{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+h3{
+    font-size: 40px;
+    -webkit-text-stroke: 1px aqua;
+    color: transparent;
+    font-size: 40px;
+    text-align: center;
+    padding: 60px;
+}
+.holiday .holiday-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 1s;
+}
+.holiday .holiday-img img:hover{
+    transform: scale(1.2);
+}
+
+.holiday .holiday-text h2{
+    font-size: 40px;
+    color: aqua;
+    font-weight: 500;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.holiday .holiday-text h4{
+    font-size: 20px;
+    color: aqua;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.holiday .holiday-text p{
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: aliceblue;
+}
+.btn{
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+    transition: all 0.6s ease-in-out;
+}
+.btn:hover{
+    transform: translateX(6px);
+    background-color: transparent;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    color: aqua;
+}
+.tour-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+}
+.tour-content .box{
+    background-color: rgb(184, 187, 189);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.tour-content img{
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.tour-content h6{
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tour-content p{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tour-btn{
+    margin-top: 50px;
+    text-align: center;
+}
+.tour-content .box:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.newsletter-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.newsletter-text h2{
+    font-size: 40px;
+    margin-top: 50px;
+    color: aqua;
+}
+.newsletter-text p{
+    color: aliceblue;
+}
+.newsletter-content form{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 1rem;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    background-color: rgb(100, 102, 104);
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-box h4{
+    font-size: 20px;
+    color: aqua;
+    font-weight: 600;
+}
+.footer-box a{
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.rights{
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    align-items: center;
+}
+.rights h4{
+    text-align: center;
+    color: black;
+    padding: 5px;
+    margin-left: 40%;
+}
